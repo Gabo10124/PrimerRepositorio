@@ -1,0 +1,133 @@
+
+
+
+
+UNIVERSIDAD DE ORIENTE
+SEGUNDO EXAMEN PARCIAL DE PROGRAMACION ESTRUCTURADA
+
+Nombre: Alex Gabriel Rivera Trujillo
+N° de carné: U20250475
+Indicaciones:
+Para cada ejercicio debes completar lo siguiente antes de programar:
+1.	Análisis del problema
+•	Variables de entrada: ¿Qué datos necesita recibir el programa?
+•	Variables de proceso: ¿Qué cálculos, transformaciones o validaciones se realizarán?
+•	Variables de salida: ¿Qué resultados debe mostrar el programa?
+2.	Descripción de la solución
+Explica con tus propias palabras, paso a paso, cómo resolverás el problema. No escribas código, solo la lógica en lenguaje natural.
+
+
+
+
+Ejercicio 1:
+Calculadora de Promedio de Notas
+Crea un programa que permita calcular el promedio de calificaciones de un
+estudiante. El programa debe recibir un array con las notas y retornar el promedio. Además, debe indicar si el estudiante aprobó (promedio >= 6.0) o reprobó.
+
+-Variables de entrada: notas1, notas2, notas3, notas
+-Variables de proceso: promedio, estado, suma
+-Variables de salida: resultado1, resultado3
+-Solucion: Iniciaremos con una funcion donde incluiremos todos los procesos para realizar las operaciones. En esta funcion estara el calculo del promedio, el verificador de si aprobo o reprobo. Despues de esto crearemos constantes para las notas de los estudiantes, en este caso haremos 5 notas porque usted asi lo pidio. Luego imprimiremos si aprobo y reprobo, el promedio y las notas del estudiante
+
+
+
+
+
+
+
+
+
+
+
+Ejercicio 2:
+Registro de Productos
+Desarrolla un programa que gestione un catálogo de productos. Cada producto debe tener: nombre, precio y cantidad en stock. El programa debe permitir:
+•	Agregar un nuevo producto al catálogo
+•	Mostrar todos los productos
+•	Calcular el valor total del inventario
+
+
+
+
+ -Variables de entrada: nombre, precio, cantidad
+-Variables de proceso: total
+-Variables de salida: valorTotal
+-Solucion:    Primero crearemos un array donde almacenaremos todos los productos, despues crearemos la funcion para agregar productos donde estableceremos el orden para cada uno de los datos del producto que se va a ingresar y pondremos alguna especie de verificador, probablemente uno de texto. Despues  crearemos una funcion para mostrar todos los productos y  crearemos un verificador para dar un mensaje de error en caso de que no haya productos en el catalogo, despues de eso, mostraremos cada uno de los productos que tenemos en una lista, donde se mostraran todas las propiedades del producto. Despues para calcular el valor total crearemos una nueva funcion donde pondremos una variable para almacenar los datos y con una estructura forEach haremos  las multiplicaciones correspondientes para cada producto, despues solo mostraremos ese resultado 
+
+Ejercicio 3:
+Sistema de Gestión de Estudiantes
+Crea un sistema para gestionar información de estudiantes. Cada estudiante tiene: nombre, carné, edad y un array de notas. El sistema debe:
+•	Registrar nuevos estudiantes
+•	Calcular el promedio de cada estudiante
+•	Encontrar al estudiante con el mejor promedio
+•	Mostrar la lista de estudiantes ordenada por promedio (de mayor a menor)
+
+
+-Variables de entrada: nombre, carnet, edad, notas
+-Variables de proceso: suma, estudiantes, promedio, mejorEstudiante, mejorPromedio, estudiantesConPromedio, temp
+-Variables de salida: promedio, mejorEstudiante
+-Solucion: Creariamos todo lo necesario para crear un nuevo estudiante, despues de esto crearimos 3 funciones, una para calcular promedio, para encontrar el mejor promedio y la otra para ordenarlos. En la de calcular promedio sumariamos las notas y lo dividiriamos entre la cantidad de notas. Para encontrar el mejor promedio comparariamos entre las notas que obtuvimos antes. Para ordenarlos, iriamos comparando todas las notas y despues ir poniendo los estudiantes segun sus promedios y mostrarlos en pantalla
+
+
+
+
+Ejercicio 4:
+Tienda en Línea - Carrito de Compras
+Desarrolla un sistema de carrito de compras que permita:
+•	Agregar productos al carrito (con nombre, precio y cantidad)
+•	Eliminar productos del carrito por nombre
+•	Modificar la cantidad de un producto
+•	Calcular el subtotal, aplicar descuento si la compra supera $100 (10% de descuento), y calcular el total
+•	Mostrar el resumen de la compra
+Antes de programar, responde:
+1.	¿Qué estructura usarás para el carrito?
+Array
+2.	¿Cómo buscarás un producto específico en el carrito?
+Haciendo un bucle hasta encontrar el prdoucto que quiero encontrar
+3.	¿Qué validaciones debes hacer?
+Verificar si el prodcto esta registrado, verificar si el producto es mayor que 100
+4.	Describe el proceso para calcular el total con descuento.
+Multiplicamos el precio por la cantidad del producto que se lleva, si eso es mayor de 100 entonces se le aplica un descuento, dividiendo entre 100 y multiplicando por 10, o multiplicando de un solo por 0.10 y quitarselo al total que teniamos antes
+
+
+Variables de entrada: nombre, precio, cantidad, nuevaCantidad
+Variables de proceso: carrito, subtotal, descuento, total, calculos
+Variables de salida: Subtototal, decuento, total
+Solucion: Hacemos lo necesario para crear el array del carrino, para eliminar un producto, lo buscariamos y despues eliminariamos todo el array. Luego una funcion para modificar la cantidad donde le asignariamos un nuevo numero a un previo numero en el array. Despues hariamos las operaciones necesarias para calcular un total, multiplicando precio por producto, verificariamos si es mayor de 100 para aplicar descuentos. Despues de esto vamos a imprimir toda la informacion
+
+Ejercicio 5:
+Sistema de Citas para Clínica Médica
+Enunciado: Desarrolla un sistema simplificado de gestión de citas para una clínica médica. El sistema debe permitir:
+•	Registrar doctores con: nombre, especialidad y código de doctor
+•	Agendar citas médicas que incluyan: nombre del paciente, código del doctor, fecha, hora y motivo de consulta
+•	Cancelar una cita buscándola por nombre del paciente y fecha
+•	Buscar citas por especialidad (mostrar todas las citas de una especialidad específica)
+•	Mostrar todas las citas programadas ordenadas por fecha
+•	Calcular estadísticas básicas: total de citas por especialidad y doctor con más citas agendadas
+Validaciones importantes:
+•	No se pueden agendar dos citas para el mismo doctor a la misma hora y fecha
+•	Al agendar, debe verificar que el código del doctor exista
+Antes de programar, responde:
+1.	¿Qué estructuras de datos necesitas para representar doctores y citas?
+Arrays
+2.	¿Cuáles son las variables de entrada para cada función?
+Estan en las variables de entrada
+3.	¿Qué validaciones debes realizar antes de agendar una cita?
+Verificar que el doctor esta registrado y que no haya valores duplicados
+4.	¿Cómo buscarás y eliminarás una cita específica?
+Buscara hasta encontrarlo la cita que quiero, y la eliminaria con un splice
+5.	¿Qué proceso seguirás para ordenar las citas por fecha?
+Comparando una fecha despues con otro, y que esa se use para clasificar la siguiente y asi hasta encontrar la mayor
+6.	Describe paso a paso cómo calcularás las estadísticas solicitadas.
+Clasificar en cada una de las citas a los doctores y las especialidades, luego encontrar al doctor que mas se repita y lo buscamos por el codigo 
+
+
+
+Variables de entrada: nombre, especialidad, codigo, fecha, hora, motivo
+Variables de proceso: doctores, citas, haydoctor, citasEstacialidad, citasOrdenadas, citasPorEspecialidad, citasPorDoctor, doctorMasCitas, maxCitas, nombreDoctor
+Variables de salida: Imprimir las variables anteriores
+Solucion: Creamos dos arrays, despues de esto hacemos verificaciones para ver si los doctores existen y si ya tienen cita, despues de esto creariamos funciones para cancelar, donde buscariamos por paciente para cancelar, para 
+ordenar lo hariamos segun las fechas de las citas comparandolas unas entre otras y al finaal para las estadisticas solo contariamos la cantidad de veces que se repite el nombre 
+de un doctor y los comparariamos entre ellos para despues mostrar el producto
+
+
