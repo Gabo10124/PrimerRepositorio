@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 id="title">Formulario de Registro</h1>
+    <form id="form">
+        <label>Nombre completo:</label>
+        <input id="nombre" class="input" type="text" placeholder="Escriba su nombre aqui">
+        <div id="errorNombre" class="error"></div>
+
+        <label>Correo electrónico:</label>
+        <input id="email" class="input" type="email" placeholder="pedrito17@gmail.com">
+        <div id="errorEmail" class="error"></div>
+
+        <label>Contraseña:</label>
+        <input id="password" class="input" type="password">
+        <div id="passwordStrength" class="strength"></div>
+        <div id="errorPassword" class="error"></div>
+
+        <label>Confirmar Contraseña:</label>
+        <input id="confirmPassword" class="input" type="password">
+        <div id="errorConfirm" class="error"></div>
+
+        <label>Fecha de nacimiento:</label>
+        <input id="fecha" class="input" type="date">
+        <div id="ageDisplay" class="age"></div>
+        <div id="errorFecha" class="error"></div>
+
+        <button class="button" type="submit">Enviar</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
